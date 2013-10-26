@@ -1,0 +1,18 @@
+{
+  "name": "facebook",
+  "repo": "jb55/facebook",
+  "description": "Facebook component",
+  "version": "0.0.1",
+  "keywords": ["facebook"],
+  "dependencies": {
+    "component/emitter": "*",
+    "viatropos/facebook-script": "*",
+    "jb55/avar": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
