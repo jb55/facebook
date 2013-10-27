@@ -36,3 +36,13 @@ Emitter(Facebook.prototype);
 Facebook.prototype.FB = function(cb) {
   this._FB.get(cb);
 };
+
+Facebook.prototype.subscribe = function (s, fn) {
+  var self = this;
+  if (fn) self.on(s, fn);
+  this.FB(function(FB){
+    FB.Event.subscribe(s, function (response) {
+      self.emit(s, response);
+    });
+  });
+};
